@@ -1,0 +1,13 @@
+@import "./_buttons.scss";
+@import "./_timer.scss";
+@import "./_indecator.scss";
+
+.song-controle {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+}

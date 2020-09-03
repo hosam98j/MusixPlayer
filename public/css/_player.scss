@@ -1,0 +1,13 @@
+.player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backdrop-filter: blur(15px) contrast(180%);
+  background: linear-gradient(
+    to top right,
+    rgba(255, 166, 0, 0.473),
+    orangered
+  );
+  display: flex;
+  flex-direction: column;
+}

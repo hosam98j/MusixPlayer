@@ -1,0 +1,202 @@
+.player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backdrop-filter: blur(15px) contrast(180%);
+  background: linear-gradient(
+    to top right,
+    rgba(255, 166, 0, 0.473),
+    orangered
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+.main-area {
+  flex-basis: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.main-area .img-and-name {
+  flex-basis: 300px;
+  height: 300px;
+  background-color: blue;
+  margin-right: 10px;
+}
+.main-area .img-and-name img {
+  width: 100%;
+  height: 90%;
+}
+.main-area .songs-list {
+  flex-basis: 60%;
+  background-color: rgba(255, 255, 255, 0.637);
+  height: 80%;
+  position: relative;
+}
+.main-area .songs-list .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+}
+.main-area .songs-list .header span {
+  padding: 0 20px;
+  display: inline-block;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid lightgray;
+}
+.main-area .songs-list .header span:nth-child(1) {
+  flex-basis: 10%;
+}
+.main-area .songs-list .header span:nth-child(2) {
+  flex-basis: 80%;
+}
+.main-area .songs-list .header span:nth-child(3) {
+  flex-basis: 10%;
+  border: none;
+}
+.main-area .songs-list .content {
+  height: 100%;
+  padding-top: 30px;
+  display: flex;
+  cursor: pointer;
+}
+.main-area .songs-list .content div {
+  border-right: 1px solid lightgrey;
+}
+.main-area .songs-list .content div div {
+  border: none;
+  margin: 5px 0;
+  padding: 0 20px;
+}
+.main-area .songs-list .content div:nth-child(1) {
+  flex-basis: 10%;
+}
+.main-area .songs-list .content div:nth-child(2) {
+  flex-basis: 80%;
+}
+.main-area .songs-list .content div:nth-child(3) {
+  flex-basis: 10%;
+  border: none;
+}
+
+.volume {
+  transition: all 0.5s ease-in-out;
+  display: block;
+  height: 5px;
+  width: 100px;
+  background-color: #d6d6d6;
+  border-radius: 5px;
+}
+.volume .volume-fill {
+  display: inline-block;
+  width: 0px;
+  height: 5px;
+  background-color: green;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-basis: 20%;
+}
+.buttons button {
+  display: block;
+  margin: 0 5px;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.buttons button img {
+  width: 100%;
+  height: 100%;
+}
+.buttons button:nth-child(3) {
+  width: 40px;
+  height: 40px;
+}
+
+.timer {
+  display: flex;
+  flex-basis: 20%;
+  padding: 0 10px;
+  justify-content: center;
+}
+.timer span {
+  display: inline-block;
+}
+
+.indecator {
+  background-color: lightgray;
+  width: 60%;
+  height: 5px;
+}
+.indecator .fill {
+  background-color: red;
+  display: inline-block;
+  height: 100%;
+}
+.indecator,
+.indecator .fill {
+  border-radius: 10px;
+}
+
+.song-controle {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: white;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+}
+
+.bg-container {
+  background-color: blue;
+  height: 100vh;
+  position: relative;
+  background: url("/images/landscape-photography-of-rocky-mountain-1303502.jpg");
+}
+
+.bg-container .overlay {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(31, 15, 179, 0.37);
+  backdrop-filter: blur(15px) contrast(180%);
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: "Segoe UI";
+  font-weight: bold;
+}
+
+h5 {
+  margin: 0 0 10px 0;
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

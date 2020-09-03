@@ -1,0 +1,9 @@
+.timer {
+  display: flex;
+  flex-basis: 20%;
+  padding: 0 10px;
+  justify-content: center;
+  span {
+    display: inline-block;
+  }
+}

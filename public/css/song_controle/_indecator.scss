@@ -1,0 +1,14 @@
+.indecator {
+  background-color: lightgray;
+  width: 60%;
+  height: 5px;
+  .fill {
+    background-color: red;
+    display: inline-block;
+    height: 100%;
+  }
+  &,
+  .fill {
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,14 @@
+.volume {
+  transition: all 0.5s ease-in-out;
+  display: block;
+  height: 5px;
+  width: 100px;
+  background-color: rgb(214, 214, 214);
+  border-radius: 5px;
+  .volume-fill {
+    display: inline-block;
+    width: 0px;
+    height: 5px;
+    background-color: orangered;
+  }
+}

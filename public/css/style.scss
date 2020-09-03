@@ -1,0 +1,42 @@
+@import "./player";
+@import "./main_area";
+@import "./volume";
+@import "./song_controle/song_controle";
+
+.bg-container {
+  background-color: blue;
+  height: 100vh;
+  position: relative;
+  background: url("/images/landscape-photography-of-rocky-mountain-1303502.jpg");
+}
+
+.bg-container .overlay {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(31, 15, 179, 0.37);
+  backdrop-filter: blur(15px) contrast(180%);
+}
+body {
+  margin: 0;
+}
+
+* {
+  font-family: "Segoe UI";
+  font-weight: bold;
+}
+
+h5 {
+  margin: 0 0 10px 0;
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+* {
+  box-sizing: border-box;
+}
